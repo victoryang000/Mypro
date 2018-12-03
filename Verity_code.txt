@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+
+import random
+
+def v_code():
+	ret=""
+	for i in range(4):
+		num=random.randint(0,9)
+		let=chr(random.randint(65,90))  #A-ZΪ65~90   a-zΪ97~122
+		code=str(random.choice([num,let]))
+		ret+=code
+	return ret
+
+print(v_code())
+
